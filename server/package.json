@@ -1,0 +1,28 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"devStart": "nodemon server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"prisma": {
+		"seed": "node prisma/seed.js"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.20",
+		"prisma": "^4.5.0"
+	},
+	"dependencies": {
+		"@fastify/cookie": "^8.3.0",
+		"@fastify/cors": "^8.1.1",
+		"@fastify/sensible": "^5.1.1",
+		"@prisma/client": "^4.5.0",
+		"dotenv": "^16.0.3",
+		"fastify": "^4.9.2"
+	}
+}
